@@ -11,6 +11,7 @@ namespace GerenciadorSquad.Controllers
         public IActionResult Index()
         {
             return View();
+            //Controler para chamar a View Login
         }
     }
 }
