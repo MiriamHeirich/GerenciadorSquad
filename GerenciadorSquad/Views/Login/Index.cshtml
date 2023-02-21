@@ -1,9 +1,15 @@
 ﻿@model GerenciadorSquad.Models.UserViewModel
+
+@{Layout = null; }
+<link href="~/css/Login.css" rel="stylesheet" />
+
     <section>
         <h1>Autenticação</h1>
-        <input type="text" name=" email" value="" placeholder="UserName/E-mail"/>
-        <input type="password" name=" PWD" value="" placeholder="Senha" />
-        <a href="">Esqueceu a senha?</a>
-        <button>Login</button>
-        <label>Crie uma Conta</label>  <a href="">Crie Aqui</a>
+        <form action="/" method="post">
+            <input type="text" name=" email" value="" placeholder="UserName/E-mail" />
+            <input type="password" name=" PWD" value="" placeholder="Senha''" />
+            <a href="">Esqueceu a senha?</a>
+            <button>Login</button>
+        </form>
+            <label>Crie uma Conta <a href="">Crie Aqui</a>  </label>  
     </section>
