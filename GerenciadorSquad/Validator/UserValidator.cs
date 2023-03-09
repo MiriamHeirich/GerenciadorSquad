@@ -11,9 +11,9 @@ namespace GerenciadorSquad.Validator
     {
         public UserValidator()
         {
-            RuleFor(user => user.Email).NotNull();
-            RuleFor(user => user.UserName).NotNull();
-            //RuleFor(user => user.PWD).NotNull();
+            RuleFor(user => user.Email).NotNull().WithMessage("Email não pode ser nulo");
+            //RuleFor(user => user.UserName).NotNull().WithMessage("Nome não pode ser Nulo");
+            RuleFor(user => user.PWD).NotNull().WithMessage("Digite a senha");
         }
         
     }
