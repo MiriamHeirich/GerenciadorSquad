@@ -31,6 +31,7 @@ namespace GerenciadorSquad.Controllers
         public IActionResult Index(UserViewModel user)
         {
             UserValidator validator = new UserValidator();
+
             ValidationResult results = validator.Validate(user);
             if (!results.IsValid)
             {
